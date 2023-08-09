@@ -1,13 +1,3 @@
-interface Color {
-  red: number;
-  green: number;
-  blue: number;
-}
+export * from "./errors";
 
-const color: Color = {
-  red: 20,
-  green: 10,
-  blue: 10,
-};
-
-console.log(color);
+export * from "./middlewares";
