@@ -14,6 +14,8 @@ export const errorHandler = async (
       .send({ errors: error.serializeErrors() });
   }
 
+  console.error(error);
+
   res.status(400).send({
     errors: [
       {
